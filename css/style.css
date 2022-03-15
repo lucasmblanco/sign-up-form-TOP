@@ -1,0 +1,176 @@
+:root {
+    --color-font-title:  #eec51d ;
+    --color-background: #300223;
+    --background-opacity: rgba(68,0,53,0.2);
+    --title-font:'Righteous', cursive;
+    --text-font: 'Didact Gothic', sans-serif;
+    --color-font:  #f0e1ea;
+    --color-things:  #1b0044;
+    --form-accent-color: #76034c;
+    --second-color-accent: #3bd7e7 ;
+    width: 100vh;
+    margin: 0;
+    background-color: var(--color-background);
+}
+
+
+header {
+    position: absolute;
+    width: 80vh;
+    height: 100%;
+    background-image: url('../media/folk_wallpaper.jpg');
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover;
+}
+
+
+#title {
+    display: flex;
+    position: relative;
+    top: 50%;
+    font-family: var(--title-font);
+    justify-content: center;
+    background-color: var(--background-opacity);
+}
+
+header>div img {
+    width: 70px;
+    height: 70px;
+}
+header h1 {
+    text-align: center;
+    font-size: 50px;
+    line-height: 60px;
+    color: var(--color-font-title);
+
+} 
+
+main {
+    position: relative;
+    left: 80vh;
+    color: var(--color-font);
+}
+
+main p {
+    padding: 10px 80px 10px 80px;
+    position: relative;
+    width: 850px;
+    top: 200px;
+    font-size: 20px;
+    font-family: var(--text-font);
+    text-shadow: 5px 5px 20px black; 
+}
+
+main p:nth-child(1), 
+main p:nth-child(2) {
+    padding: 0 80px 0 80px;
+}
+
+main p:nth-child(3) {
+    padding: 50px 80px;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: 850px;
+    top: 250px;
+    padding: 10px 80px 10px 80px; 
+    font-size: 20px;
+    font-family: var(--text-font);
+    
+}
+
+input {
+   width: 100%;
+   background-color: var(--color-background);
+   border:   var(--form-accent-color) solid 1px;
+   border-radius: 5px;
+   color: var(--text-font);
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+}
+
+input:hover {
+    box-shadow: 0.1px 0.1px 10px var(--form-accent-color);
+}
+input:focus {
+    outline: 2px solid var(--form-accent-color);
+}
+
+label {
+    display: block;
+    text-shadow: 5px 5px 20px black;
+}
+
+main form div {
+    padding: 10px 25px 10px 0;
+    width: 400px;
+}
+
+#main-text {
+    width: 800px;
+}
+
+span {
+    color: var(--color-font-title);
+}
+
+div+p{
+    color: var(--color-font-title);
+}
+
+button {
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    font-family: var(--title-font);
+    background-color: var(--second-color-accent);
+    color: var(--color-background);
+    border-style: solid;
+    border-color:var(--second-color-accent);
+    border-radius: 5px;
+    margin: 20px 0 0 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+
+button:hover {
+    box-shadow: 0.1px 0.1px 10px var(--second-color-accent);
+}
+
+hr {
+   position: relative;
+   top: 280px;
+   height: 1px;
+   border: 0;
+   margin-right:-21%;
+   background-color: var(--color-font-title);
+}
+
+hr::after {
+    width: 100vh;
+}
+
+main p:nth-child(5) {
+    position: relative;
+    top: 300px;
+    text-shadow: 5px 5px 20px black;
+}
+
+main p > a {
+    padding: 8px;
+    color: var(--color-font-title);
+    text-decoration: none;
+    text-shadow: 5px 5px 20px black;
+}
+
+main p > a:hover {
+    text-shadow: 5px 5px 20px var(--color-font-title);
+}
+
